@@ -54,6 +54,10 @@ nav ul {
     color: #00D1CD;
 }
 
+.mobile {
+    display: none;
+}
+
 .proj-link {
     color: #222831;
     font-weight: 900;
@@ -448,4 +452,331 @@ nav ul {
     height: 136%;
     padding: 0px 15px;
     top: -18%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1400px) {
+    main {
+        margin-top: -20px;
+    }
+
+    .project-container {
+        margin: 25px;
+    }
+
+    .main-project {
+        flex: 1;
+        order: 1;
+    }
+
+    
+
+    .project-2 {
+        flex:1;
+        order: 2;
+    }
+
+    .project-3 {
+        flex:1;
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* .mobile {
+        display: none;
+        /* flex-direction: column; */
+    /* } */
+
+    #about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #about-me h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        padding: 25px;
+        font-size: 2em;
+        color: #0C1E7F;
+        border-right: none;
+        border-bottom: solid 5px #0C1E7F;
+    }
+
+    #about-me p{
+        text-align: center;
+    }
+
+    #my-portfolio {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    #my-portfolio h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        padding: 25px;
+        font-size: 2em;
+        color:#06FF00;
+        border-right: none;
+        border-bottom: solid 5px #06FF00;
+    }
+
+    #port {
+        display: flex;
+        width: 100%;
+        height: 450px;
+        margin-top : 50%;
+    }
+
+    #port-container-inner {
+        position: relative;
+        color: #EEEEEE;
+        height: 98%;
+        width: 137%;
+        background-color: #222831;
+        margin: 0% 2%;
+        top: 1%;
+        right: 21%;
+    }
+
+    #port-mobile {
+        display: none;
+    }
+
+    #contact-me {
+        display: flex;
+        flex-direction: column;
+        color: #FF008E;
+        padding: 25px;
+    }
+
+    #contact-me h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FF008E;
+        width: 35%;
+        height: 0%;
+        padding: 25px;
+        font-size: 2em;
+        border-bottom: solid 5px #FF008E;
+        border-right: none;
+    }
+
+    #sect-port {
+        font-size: 3em;
+        left:8%
+    }
+
+    #title-container-port {
+        height:100%;
+        width: 12%;
+        top: 0%;
+
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        margin-top: 60px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    /* .desktop {
+        display: none;
+    } */
+
+    .mobile {
+        display: flex;
+        height: 250px;
+        width:95%;
+        margin: 5%;
+        border: 3px solid #222831;
+        
+        /* text-align: center; */
+        /* flex-direction: column; */
+    }
+
+    .mobile a {
+        text-decoration: none;
+    }
+
+    .mobile span {
+        /* text-align: center; */
+        position: relative;
+        top: 78%;
+        left: 4%;
+        color: #FF008E;
+        font-size: 2.5em;
+    }
+
+    .sect-title {
+        transform: none;
+        top:-8%;
+        left: -6%;
+        color: #222831;
+    }
+    
+    #about-cont-inner {
+        height: 97%;
+        width: 98.5%;
+        background-color: #222831;
+        padding: 2.5%;
+        margin: .75%;
+    }
+
+    #about-me p {
+        color: aliceblue;
+        /* width: 100%; */
+        font-size: 1.3em;
+        /* margin-bottom: 0; */
+    }
+
+    #contact-form {
+        width: 97%;
+        height: 97%;
+        top: -3%;
+        left: -3%;
+    }
+
+    #contact-me {
+        height: 525px;
+    }
+
+    #intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+        margin-top: 90px;
+        width: 100%;
+        background-image: url(../images/titlebgsm.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    #intro h1 {
+        font-size: 60px;
+        margin-top: 50px;
+        text-align: center;
+        position: relative;
+        top: -52%;
+    }
+
+    #intro h3 {
+        font-size: 50px;
+        text-align: center;
+        position: relative;
+        top: -83%;
+    }
+    
+    #intro img {
+        position: relative;
+        top: -73%;
+        left: -29%;
+    }
+
+    #intro-inner {
+        position: relative;
+        top: 25%;
+        background-image: linear-gradient(90deg, #F30067, #00D1CD);
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        text-align: center;
+    }
+
+    #intro-inner2 {
+        position: relative;
+        background-color: #222831;
+        border-radius: 50%;
+        height: 90%;
+        width: 90%;
+        left: 5%;
+        top: -9%;
+    }
+
+    #intro-inner h1 {
+
+    }
+
+    #message {
+        height: 125px;
+        width: 380px;
+    }
+
+    #nav-links {
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: flex-end;
+    }
+    
+    
+    #contact-form {
+        margin: 20px;
+    }
+
+    #port {
+        display:none;
+    }
+
+    #port-container-inner {
+        background: none;
+    }
+
+    #port-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sect-port {
+        color: #222831;
+        position: relative;
+        font-size: 4em;
+        transform: none;
+        top: -23%;
+    }
+
+    #sect-title-about {
+        color: #222831;
+        position: relative;
+        font-size: 4em;
+        transform: none;
+        top: -23%;
+    }
+
+    #title-container-about {
+        /* display: inline-block; */
+        width: 100%;
+        height: 100%;
+        /* padding: 0px 5px; */
+        padding: 0px 15px;
+    }
+
+    #title-container-port {
+        background-image: none;
+        margin-top: 15%;
+    }
+
+    #title-container-contact {
+        width: 100%;
+
+    }
 }

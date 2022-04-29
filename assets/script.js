@@ -1,3 +1,5 @@
+const mediaQuery = window.matchMedia('(min-width: 751px)')
+
 function cycleProjects(event) {
     event.preventDefault();
     if (event.target.id === "next") {
@@ -62,17 +64,18 @@ function cycleProjects(event) {
 // }
 
 function init() {
-    $("#portfolio").append("<div class='code-quiz' id='proj-0'><a class='proj-link' href='https://cpaschall.github.io/code-quiz/' alt='code quiz gif'><span id='rotate-0'>code quiz</span></a></div>");
-    $("#portfolio").append("<div class='weather-dash' id='proj-1'><a class='proj-link' href='https://cpaschall.github.io/weather-dashboard/' alt='weather dashboard gif'><span id='rotate-1'>weather dashboard</span></a></div>");
-    $("#portfolio").append("<div class='stocks' id='proj-2'><a class='proj-link' href='https://anthonydiblasio.github.io/stock-weather/' alt='stock-weather gif'><span id='rotate-2'>stock-weather</span></a></div>");
-    $("#portfolio").append("<div class='scheduler' id='proj-3'><a class='proj-link' href='https://cpaschall.github.io/workday-scheduler/' alt='scheduler gif'><span id='rotate-3'>scheduler</span></a></div>");
-    $("#portfolio").append("<div class='pw-gen' id='proj-4'><a class='proj-link' href='https://cpaschall.github.io/password-generator/' alt='pw gen png'><span id='rotate-0'>password generator</span></a></div>");
+    $("#portfolio").append("<div class='code-quiz desktop' id='proj-0'><a class='proj-link' href='https://cpaschall.github.io/code-quiz/' alt='code quiz gif'><span id='rotate-0'>code quiz</span></a></div>");
+    $("#portfolio").append("<div class='weather-dash desktop' id='proj-1'><a class='proj-link' href='https://cpaschall.github.io/weather-dashboard/' alt='weather dashboard gif'><span id='rotate-1'>weather dashboard</span></a></div>");
+    $("#portfolio").append("<div class='stocks desktop' id='proj-2'><a class='proj-link' href='https://anthonydiblasio.github.io/stock-weather/' alt='stock-weather gif'><span id='rotate-2'>stock-weather</span></a></div>");
+    $("#portfolio").append("<div class='scheduler desktop' id='proj-3'><a class='proj-link' href='https://cpaschall.github.io/workday-scheduler/' alt='scheduler gif'><span id='rotate-3'>scheduler</span></a></div>");
+    $("#portfolio").append("<div class='pw-gen desktop' id='proj-4'><a class='proj-link' href='https://cpaschall.github.io/password-generator/' alt='pw gen png'><span id='rotate-0'>password generator</span></a></div>");
 }
+ 
+if(mediaQuery.matches) {
+     init()
+ }
 
-init()
-
+// init()
 // $("#next").on("click", nextCard)
 // $("#previous").on("click", prevCard)
 $(".cycle-btn").on("click", cycleProjects)
-
-{/* <img src='./assets/images/stockweather.gif' alt='stock-weather gif'> */}
