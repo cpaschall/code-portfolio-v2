@@ -25,6 +25,11 @@ function cycleProjects(event) {
     }
 }
 
+// notifications
+
+// $(".card").append(` <div class="notification"><button class="delete"></button>The data for this weather type is unavailable! Please try another weather type.</div>`)
+
+
 // function nextCard(event){
 //     event.preventDefault();
 //     // console.log(event.target === $("#next"))

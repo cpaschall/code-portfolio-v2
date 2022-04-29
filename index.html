@@ -26,14 +26,18 @@
     </header>
     <main class="">
       <section id="intro"> 
-        <h1>hi, i'm cal.</h1>
-        <img src="./assets/images/cal-toon4.png" alt="">
-        <h3>a web developer.</h3>
+        <div id="intro-inner">
+          <div id="intro-inner2">
+            <h1>hi, i'm cal.</h1>
+            <img src="./assets/images/cal-toon4.png" alt="">
+            <h3>a web developer.</h3>
+          </div>
+        </div>
       </section>
       <section id="main-content">
         <div class="" id="about-me">
-          <div class="title-container">
-            <h3 class="sect-title">about me</h3>
+          <div id="title-container-about">
+            <h3 id="sect-title-about">about me</h3>
           </div>
           <div id="about-cont">
               <div id="about-cont-inner">
@@ -50,8 +54,10 @@
             
         </div>
         <div class="" id="port">
-            <div class="title-container">
-                <h3 class="sect-port">portfolio</h3>
+            <div id="title-container-port">
+                <div id="port-container-inner">
+                  <h3 id="sect-port">portfolio</h3>
+                </div>   
             </div>
             <button type="submit" class="cycle-btn" id="previous"><</button>
             <div id="portfolio">  
@@ -60,10 +66,11 @@
             <button type="submit" class="cycle-btn" id="next">></button>
         </div>
         <div class="" id="contact-me">
-          <div class="title-container">
+          <div id="title-container-contact">
             <h3 class="sect-title">contact me</h3>
           </div>
-          <form action="" id="contact-form">
+          <div id="contact-cont">
+            <form action="" id="contact-form">
               <p>
                   <label for="full-name">name:</label>
                   <input type="text" class="text-input" id="full-name" placeholder="first last">
@@ -79,7 +86,8 @@
               <p>
                   <button>send email</button>
               </p>
-          </form>
+            </form>
+          </div>
         </div>
       </section>
     </main>
