@@ -5,7 +5,6 @@
 Create version 2 of my portfolio.  The updated version contains additional links showcasing my resume, providing my email address and twitter handle and introduce javascript to cycle through my projects.  
 
 
-
 ## Acceptance Criteria
 
 ```
@@ -69,6 +68,15 @@ Updated LinkedIn
 Update your LinkedIn Profile with a strong bio statement, a professional photo, and links to your Github and portfolio.
 
 ```
+## Technologies
+
+```
+HTML
+CSS
+Javascript
+
+```
+
 
 ## Originial Portfolio
 [My Code Portfolio](http://cpaschall.github.io/code-portfolio)
